@@ -1,0 +1,1 @@
+#define SHT3X_ADDRESS 0x88
