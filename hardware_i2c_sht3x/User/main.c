@@ -7,6 +7,7 @@
 
 
 uint16_t Data;
+uint16_t Data1;
 int main(void)
 {
 	OLED_Init();
@@ -14,7 +15,6 @@ int main(void)
 	Sht3x_Init();
 	
 	Data = Sht3x_ReadReg(0xF32D);
-	
 	OLED_ShowString(1, 1, "Data:");
 	OLED_ShowHexNum(1,6,Data,4);
 	
@@ -29,6 +29,9 @@ int main(void)
 
 	
 	while(1){
+		Data1 = Sht3x_ReadReg(0x2032);
+		OLED_ShowString(2, 1, "Data1:");
+		OLED_ShowHexNum(2,6,Data,4);
 //		Mpu6050_GatData(&AX, &AY, &AZ, &GX, &GY, &GZ);
 //		OLED_ShowSignedNum(2, 1, AX, 5);
 //		OLED_ShowSignedNum(3, 1, AY, 5);

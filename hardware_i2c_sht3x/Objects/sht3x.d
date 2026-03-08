@@ -1,7 +1,7 @@
 .\objects\sht3x.o: Hardware\SHT3X.c
 .\objects\sht3x.o: .\Start\stm32f10x.h
 .\objects\sht3x.o: .\Start\core_cm3.h
-.\objects\sht3x.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sht3x.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\sht3x.o: .\Start\system_stm32f10x.h
 .\objects\sht3x.o: .\User\stm32f10x_conf.h
 .\objects\sht3x.o: .\Library\stm32f10x_adc.h
