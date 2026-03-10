@@ -3,42 +3,33 @@
 #include "OLED.h"
 #include "Mpu6050.h"
 #include "SHT3X.h"
+#include "SHT3X_Ctrl.h"
 
 
 
-uint16_t Data;
-uint16_t Data1;
+uint16_t Data, tData, RhData;
 int main(void)
 {
 	OLED_Init();
-	
 	Sht3x_Init();
+	Delay_s(1);
 	
 	Data = Sht3x_ReadReg(0xF32D);
-	OLED_ShowString(1, 1, "Data:");
-	OLED_ShowHexNum(1,6,Data,4);
 	
-	//Mpu6050_WriteReg(0x6B, 0x00);
-	//Mpu6050_WriteReg(0x19, 0xAA);
-	
-	//uint8_t ID = Mpu6050_ReadReg(0x19);
-	
-	
-	//OLED_ShowHexNum(1, 1, ID, 2);
+	Delay_s(1);
+	OLED_ShowHexNum(1,1,Data,4);
 	
 
 	
 	while(1){
-		Data1 = Sht3x_ReadReg(0x2032);
-		OLED_ShowString(2, 1, "Data1:");
-		OLED_ShowHexNum(2,6,Data,4);
-//		Mpu6050_GatData(&AX, &AY, &AZ, &GX, &GY, &GZ);
-//		OLED_ShowSignedNum(2, 1, AX, 5);
-//		OLED_ShowSignedNum(3, 1, AY, 5);
-//		OLED_ShowSignedNum(4, 1, AZ, 5);
-//		OLED_ShowSignedNum(2, 8, GX, 5);
-//		OLED_ShowSignedNum(3, 8, GY, 5);
-//		OLED_ShowSignedNum(4, 8, GZ, 5);
+		Delay_s(2);
+		OLED_Clear();
+		Read_T_RH(&tData, &RhData);
+		OLED_ShowString(2,1,"c ");
+		OLED_ShowNum(2,3,tData,2);
+		OLED_ShowString(3,1,"RH ");
+		OLED_ShowNum(3,4,RhData,2);
+		
 	}
 }
  

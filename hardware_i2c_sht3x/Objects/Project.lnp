@@ -31,6 +31,7 @@
 ".\objects\led.o"
 ".\objects\mpu6050.o"
 ".\objects\sht3x.o"
+".\objects\sht3x_ctrl.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 --strict --scatter ".\Objects\Project.sct"
