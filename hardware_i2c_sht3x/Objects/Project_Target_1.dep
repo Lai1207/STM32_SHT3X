@@ -903,7 +903,7 @@ I (.\Library\misc.h)(0x69685233)
 I (Hardware\Mpu6050_Reg.h)(0x69782F12)
 F (.\Hardware\Mpu6050.h)(0x697859B2)()
 F (.\Hardware\Mpu6050_Reg.h)(0x69782F12)()
-F (.\Hardware\SHT3X.c)(0x69AFAAE2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\sht3x.o --omf_browse .\objects\sht3x.crf --depend .\objects\sht3x.d)
+F (.\Hardware\SHT3X.c)(0x69B25C1A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\sht3x.o --omf_browse .\objects\sht3x.crf --depend .\objects\sht3x.d)
 I (.\Start\stm32f10x.h)(0x69685233)
 I (.\Start\core_cm3.h)(0x69685233)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -932,10 +932,10 @@ I (.\Library\stm32f10x_tim.h)(0x69685233)
 I (.\Library\stm32f10x_usart.h)(0x69685233)
 I (.\Library\stm32f10x_wwdg.h)(0x69685233)
 I (.\Library\misc.h)(0x69685233)
-I (Hardware\SHT3X_REG.h)(0x69AFBA57)
-F (.\Hardware\SHT3X.h)(0x69AF86EE)()
-F (.\Hardware\SHT3X_REG.h)(0x69AFBA57)()
-F (.\Hardware\SHT3X_Ctrl.c)(0x69AFBA5F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\sht3x_ctrl.o --omf_browse .\objects\sht3x_ctrl.crf --depend .\objects\sht3x_ctrl.d)
+I (Hardware\SHT3X_REG.h)(0x69B2501D)
+F (.\Hardware\SHT3X.h)(0x69B25BE8)()
+F (.\Hardware\SHT3X_REG.h)(0x69B2501D)()
+F (.\Hardware\SHT3X_Ctrl.c)(0x69B25BBC)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\sht3x_ctrl.o --omf_browse .\objects\sht3x_ctrl.crf --depend .\objects\sht3x_ctrl.d)
 I (.\Start\stm32f10x.h)(0x69685233)
 I (.\Start\core_cm3.h)(0x69685233)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -964,11 +964,11 @@ I (.\Library\stm32f10x_tim.h)(0x69685233)
 I (.\Library\stm32f10x_usart.h)(0x69685233)
 I (.\Library\stm32f10x_wwdg.h)(0x69685233)
 I (.\Library\misc.h)(0x69685233)
-I (Hardware\SHT3X.h)(0x69AF86EE)
-I (Hardware\SHT3X_Reg.h)(0x69AFBA57)
+I (Hardware\SHT3X.h)(0x69B25BE8)
+I (Hardware\SHT3X_Reg.h)(0x69B2501D)
 I (D:\Keil5\ARM\ARMCC\include\math.h)(0x588B8344)
-F (.\Hardware\SHT3X_Ctrl.h)(0x69AFAB38)()
-F (.\User\main.c)(0x69AFB823)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\Hardware\SHT3X_Ctrl.h)(0x69B25BF9)()
+F (.\User\main.c)(0x69B2599D)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Start\stm32f10x.h)(0x69685233)
 I (.\Start\core_cm3.h)(0x69685233)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1000,8 +1000,9 @@ I (.\Library\misc.h)(0x69685233)
 I (.\System\Delay.h)(0x69685233)
 I (.\Hardware\OLED.h)(0x69685233)
 I (.\Hardware\Mpu6050.h)(0x697859B2)
-I (.\Hardware\SHT3X.h)(0x69AF86EE)
-I (.\Hardware\SHT3X_Ctrl.h)(0x69AFAB38)
+I (.\Hardware\SHT3X.h)(0x69B25BE8)
+I (.\Hardware\SHT3X_Ctrl.h)(0x69B25BF9)
+I (.\Hardware\SHT3X_Reg.h)(0x69B2501D)
 F (.\User\stm32f10x_conf.h)(0x69685233)()
 F (.\User\stm32f10x_it.c)(0x69685233)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (User\stm32f10x_it.h)(0x69685233)

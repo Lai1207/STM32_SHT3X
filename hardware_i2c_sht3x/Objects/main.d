@@ -33,3 +33,4 @@
 .\objects\main.o: .\Hardware\Mpu6050.h
 .\objects\main.o: .\Hardware\SHT3X.h
 .\objects\main.o: .\Hardware\SHT3X_Ctrl.h
+.\objects\main.o: .\Hardware\SHT3X_Reg.h
