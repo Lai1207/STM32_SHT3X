@@ -35,3 +35,6 @@
 .\objects\main.o: .\Hardware\SHT3X_Ctrl.h
 .\objects\main.o: .\Hardware\SHT3X_Reg.h
 .\objects\main.o: .\System\timer.h
+.\objects\main.o: .\Hardware\Serial.h
+.\objects\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\String.h
