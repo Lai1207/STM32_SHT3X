@@ -48,14 +48,21 @@ void Serial_SendByte(uint8_t Byte){
 	while(USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
 }
 
-//uint8_t Serial_GetFlag(){
-//	if(RxFlag == 1){
-//		RxFlag = 0;
-//		return 1;
-//	}
-//	return 0;
-//}
-
+void Serial_SendString(char *String){
+	uint8_t i;
+	for(i = 0; String[i] != '\0'; i++){
+		Serial_SendByte(String[i]);
+	}
+	
+}
+void Serial_Printf(char *format, ...){
+	char String[100];
+	va_list arg;
+	va_start(arg,format);
+	vsprintf(String, format, arg);
+	va_end(arg);
+	Serial_SendString(String);
+}
 //USART IRQ
 void USART1_IRQHandler(void){
 	
