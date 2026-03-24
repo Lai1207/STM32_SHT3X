@@ -691,41 +691,6 @@
               <FilePath>.\Hardware\OLED_Font.h</FilePath>
             </File>
             <File>
-              <FileName>Key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Key.c</FilePath>
-            </File>
-            <File>
-              <FileName>Key.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Hardware\Key.h</FilePath>
-            </File>
-            <File>
-              <FileName>LED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\LED.c</FilePath>
-            </File>
-            <File>
-              <FileName>LED.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Hardware\LED.h</FilePath>
-            </File>
-            <File>
-              <FileName>Mpu6050.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Mpu6050.c</FilePath>
-            </File>
-            <File>
-              <FileName>Mpu6050.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Hardware\Mpu6050.h</FilePath>
-            </File>
-            <File>
-              <FileName>Mpu6050_Reg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Hardware\Mpu6050_Reg.h</FilePath>
-            </File>
-            <File>
               <FileName>SHT3X.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Hardware\SHT3X.c</FilePath>

@@ -1,7 +1,6 @@
 #include "stm32f10x.h"                  // Device header
 #include "Delay.h"
 #include "OLED.h"
-#include "Mpu6050.h"
 #include "SHT3X.h"
 #include "SHT3X_Ctrl.h"
 #include "SHT3X_Reg.h"
@@ -63,13 +62,13 @@ int main(void)
 }
 void call_sht3x(){
 	sht3x_counter++;
-	Serial_Printf("Count: %d\r\n",sht3x_counter);
 	switch(Sht_Mode){
 		case 0:
 			if(sht3x_counter > 3){
 				Sht3xRead_T_RH(&tData, &RhData);
 				OLED_ShowNum(2,1,tData,2);
 				OLED_ShowNum(3,4,RhData,2);
+				Serial_Printf("c : %d RH: %d \r\n",tData,RhData);
 				sht3x_counter = 0;
 			}
 		break;
@@ -79,6 +78,7 @@ void call_sht3x(){
 				Sht3xRead_T_RH(&tData, &RhData);
 				OLED_ShowNum(2,1,tData,2);
 				OLED_ShowNum(3,4,RhData,2);
+				Serial_Printf("c : %d RH: %d \r\n",tData,RhData);
 				sht3x_counter = 0;
 			}
 		break;
@@ -88,6 +88,7 @@ void call_sht3x(){
 				Sht3xRead_T_RH(&tData, &RhData);
 				OLED_ShowNum(2,1,tData,2);
 				OLED_ShowNum(3,4,RhData,2);
+				Serial_Printf("c : %d RH: %d \r\n",tData,RhData);
 				sht3x_counter = 0;
 			}
 		break;

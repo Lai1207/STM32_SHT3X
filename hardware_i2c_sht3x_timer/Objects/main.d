@@ -30,7 +30,6 @@
 .\objects\main.o: .\Library\misc.h
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\Hardware\OLED.h
-.\objects\main.o: .\Hardware\Mpu6050.h
 .\objects\main.o: .\Hardware\SHT3X.h
 .\objects\main.o: .\Hardware\SHT3X_Ctrl.h
 .\objects\main.o: .\Hardware\SHT3X_Reg.h
