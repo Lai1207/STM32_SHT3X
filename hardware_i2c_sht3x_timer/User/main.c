@@ -21,12 +21,13 @@ int main(void)
 	
 	Delay_s(1);
 	Sht3xReset();
-//	OLED_ShowHexNum(1,1,Data,4);
+
 	Sht3x_WriteReg(SHT3X_05MPS_HIGH);
+	
 	Delay_s(1);
 	Data1 = Sht3x_ReadReg(SHT3X_STATUS);
-	//OLED_ShowHexNum(1,1,Data1,4);
-	
+
+	OLED_ShowString(1,1,"mode_1");
 	OLED_ShowString(2,3," C");
 	OLED_ShowString(3,1,"RH ");
 	
@@ -34,7 +35,7 @@ int main(void)
 	
 	while(1){
 		if(RxFlag == 1){
-			if(strcmp(RxData_Packect, "mode1") == 0){										//Mode1  2 second
+			if(strcmp(RxData_Packect, "mode1") == 0){								//Mode1  2 second
 				Sht3x_WriteReg(Break_Command);
 				Sht3x_WriteReg(SHT3X_05MPS_HIGH);
 				Sht_Mode = 0;
@@ -63,8 +64,8 @@ int main(void)
 void call_sht3x(){
 	sht3x_counter++;
 	switch(Sht_Mode){
-		case 0:
-			if(sht3x_counter > 3){
+		case 0:																		//Mode1
+			if(sht3x_counter > 3){									
 				Sht3xRead_T_RH(&tData, &RhData);
 				OLED_ShowNum(2,1,tData,2);
 				OLED_ShowNum(3,4,RhData,2);
@@ -73,7 +74,7 @@ void call_sht3x(){
 			}
 		break;
 		
-		case 1:
+		case 1:																		//Mode2
 			if(sht3x_counter > 1){
 				Sht3xRead_T_RH(&tData, &RhData);
 				OLED_ShowNum(2,1,tData,2);
@@ -83,7 +84,7 @@ void call_sht3x(){
 			}
 		break;
 		
-		case 2:
+		case 2:																		//Mode3
 			if(sht3x_counter > 0){
 				Sht3xRead_T_RH(&tData, &RhData);
 				OLED_ShowNum(2,1,tData,2);
